@@ -1,0 +1,620 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>#mapserver @ irc.freenode.net stats by FrankW</title>
+<style type="text/css" title="softgreen">
+/* <!--
+This is a soft green theme that I created. It is the first of many that
+I
+will create.
+Visit http://ircstats.axelay.com to see it in action!
+
+Created by: Melody Mayberry, http://www.melbell.com
+
+Place this line in pisg.cfg
+<set hicell="#B4CEA9" hicell2="#CCEAC0">
+--> */
+
+/* <!-- These are for the regular links (in the stats) --> */
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+a:link {
+    color: #008800;
+}
+a:visited {
+    color: #008800;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: ##008800;
+}
+
+/* <!-- These are for other links EX: Links at the bottom of the page --> */
+a.background {
+    text-decoration: none;
+}
+
+a.background:link {
+    color: #008800;
+}
+
+a.background:visited {
+    color: #008800;
+}
+
+a.background:hover {
+    text-decoration: underline;
+    color: #008800;
+}
+
+body {
+    background-color: #dfffd1;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 13px;
+    color: black;
+}
+
+td {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 13px;
+    color: black;
+    text-align: left;
+}
+
+.title {
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* <!-- Cell Properties for Headlines EX: "Most Active Nicks" --> */
+.headtext {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: #54604F;
+}
+
+/* <!-- Has no apparent effect --> */
+.headlinebg {
+    background-color: #000000;
+}
+
+/* <!-- Column Titles in Numbered Lists EX: "Most Active Nicks" --> */
+.tdtop {
+    background-color: #CDEBC1;
+}
+
+/* <!-- Cell in "Big Numbers" section, also the cells of the data in certain
+numbered lists (all except the "Most active nicks" and the "Users with
+most
+nicknames" sections) --> */
+.hicell {
+    background-color: #C1DDB5;
+}
+
+/* <!-- Cells of the data in "Users with most nicknames" section --> */
+.hicell10 {
+    background-color: #C1DDB5;
+    font-size: 10px;
+}
+
+/* <!-- In numbered lists, the cell properties for 2+ --> */
+.rankc {
+    background-color: #B4CEA9;
+}
+
+/* <!-- In numbered lists, the cell properties for 1 --> */
+.hirankc {
+    background-color: #91AC87;
+    font-weight: bold;
+}
+
+/* <!-- Name Cells in These Didn't Make It... --> */
+.rankc10 {
+    background-color: #CCEAC0;
+    font-size: 10px;
+}
+
+/* <!-- Hours "1-23"  in Most Active Times Cell --> */
+.rankc10center {
+    background-color: #B4CEA9;
+    font-size: 10px;
+    text-align: center;
+}
+
+/* <!-- Hour "0" in Most Active Times Cell --> */
+.hirankc10center {
+    background-color: #91AC87;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+}
+
+.small {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 10px;
+}
+
+
+.asmall {
+      font-family: "Arial narrow", Arial, sans-serif;
+      font-size: 10px;
+      color: black;
+      text-align: center;
+}
+</style>
+</head>
+<body>
+<div align="center">
+
+<span class="title">#mapserver @ irc.freenode.net stats by FrankW</span><br />
+<br />
+Statistics generated on  Wednesday 23 September 2015 - 3:31:59
+<br />During this 2151-day reporting period, a total of <b>1452</b> different nicks were represented on #mapserver.<br /><br />
+   <br />
+   <table width="710" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Most active times</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table border="0"><tr>
+<td align="center" valign="bottom" class="asmall">2.9%<br /><img src="./blue-v.png" width="15" height="35" alt="5498" title="5498"/></td>
+<td align="center" valign="bottom" class="asmall">2.3%<br /><img src="./blue-v.png" width="15" height="28" alt="4422" title="4422"/></td>
+<td align="center" valign="bottom" class="asmall">2.4%<br /><img src="./blue-v.png" width="15" height="29" alt="4552" title="4552"/></td>
+<td align="center" valign="bottom" class="asmall">2.5%<br /><img src="./blue-v.png" width="15" height="31" alt="4821" title="4821"/></td>
+<td align="center" valign="bottom" class="asmall">4.0%<br /><img src="./blue-v.png" width="15" height="49" alt="7711" title="7711"/></td>
+<td align="center" valign="bottom" class="asmall">5.5%<br /><img src="./blue-v.png" width="15" height="67" alt="10523" title="10523"/></td>
+<td align="center" valign="bottom" class="asmall">7.1%<br /><img src="./green-v.png" width="15" height="86" alt="13453" title="13453"/></td>
+<td align="center" valign="bottom" class="asmall">8.2%<br /><img src="./green-v.png" width="15" height="100" alt="15539" title="15539"/></td>
+<td align="center" valign="bottom" class="asmall">7.8%<br /><img src="./green-v.png" width="15" height="96" alt="14960" title="14960"/></td>
+<td align="center" valign="bottom" class="asmall">6.7%<br /><img src="./green-v.png" width="15" height="81" alt="12735" title="12735"/></td>
+<td align="center" valign="bottom" class="asmall">6.1%<br /><img src="./green-v.png" width="15" height="74" alt="11598" title="11598"/></td>
+<td align="center" valign="bottom" class="asmall">6.7%<br /><img src="./green-v.png" width="15" height="82" alt="12818" title="12818"/></td>
+<td align="center" valign="bottom" class="asmall">6.3%<br /><img src="./yellow-v.png" width="15" height="76" alt="11951" title="11951"/></td>
+<td align="center" valign="bottom" class="asmall">6.0%<br /><img src="./yellow-v.png" width="15" height="74" alt="11520" title="11520"/></td>
+<td align="center" valign="bottom" class="asmall">4.9%<br /><img src="./yellow-v.png" width="15" height="60" alt="9364" title="9364"/></td>
+<td align="center" valign="bottom" class="asmall">3.3%<br /><img src="./yellow-v.png" width="15" height="40" alt="6347" title="6347"/></td>
+<td align="center" valign="bottom" class="asmall">2.5%<br /><img src="./yellow-v.png" width="15" height="30" alt="4737" title="4737"/></td>
+<td align="center" valign="bottom" class="asmall">2.4%<br /><img src="./yellow-v.png" width="15" height="29" alt="4517" title="4517"/></td>
+<td align="center" valign="bottom" class="asmall">2.5%<br /><img src="./red-v.png" width="15" height="30" alt="4791" title="4791"/></td>
+<td align="center" valign="bottom" class="asmall">2.0%<br /><img src="./red-v.png" width="15" height="24" alt="3739" title="3739"/></td>
+<td align="center" valign="bottom" class="asmall">1.9%<br /><img src="./red-v.png" width="15" height="23" alt="3616" title="3616"/></td>
+<td align="center" valign="bottom" class="asmall">1.9%<br /><img src="./red-v.png" width="15" height="23" alt="3576" title="3576"/></td>
+<td align="center" valign="bottom" class="asmall">1.8%<br /><img src="./red-v.png" width="15" height="22" alt="3444" title="3444"/></td>
+<td align="center" valign="bottom" class="asmall">2.2%<br /><img src="./red-v.png" width="15" height="26" alt="4113" title="4113"/></td>
+</tr><tr>
+<td class="rankc10center" align="center">0</td>
+<td class="rankc10center" align="center">1</td>
+<td class="rankc10center" align="center">2</td>
+<td class="rankc10center" align="center">3</td>
+<td class="rankc10center" align="center">4</td>
+<td class="rankc10center" align="center">5</td>
+<td class="rankc10center" align="center">6</td>
+<td class="hirankc10center" align="center">7</td>
+<td class="rankc10center" align="center">8</td>
+<td class="rankc10center" align="center">9</td>
+<td class="rankc10center" align="center">10</td>
+<td class="rankc10center" align="center">11</td>
+<td class="rankc10center" align="center">12</td>
+<td class="rankc10center" align="center">13</td>
+<td class="rankc10center" align="center">14</td>
+<td class="rankc10center" align="center">15</td>
+<td class="rankc10center" align="center">16</td>
+<td class="rankc10center" align="center">17</td>
+<td class="rankc10center" align="center">18</td>
+<td class="rankc10center" align="center">19</td>
+<td class="rankc10center" align="center">20</td>
+<td class="rankc10center" align="center">21</td>
+<td class="rankc10center" align="center">22</td>
+<td class="rankc10center" align="center">23</td>
+</tr></table>
+<table align="center" border="0" width="520"><tr>
+<td align="center" class="asmall"><img src="./blue-h.png" width="40" height="15" align="middle" alt="0-5" /> = 0-5</td>
+<td align="center" class="asmall"><img src="./green-h.png" width="40" height="15" align="middle" alt="6-11" /> = 6-11</td>
+<td align="center" class="asmall"><img src="./yellow-h.png" width="40" height="15" align="middle" alt="12-17" /> = 12-17</td>
+<td align="center" class="asmall"><img src="./red-h.png" width="40" height="15" align="middle" alt="18-23" /> = 18-23</td>
+</tr></table>
+   <br />
+   <table width="710" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Most active nicks</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table border="0" width="714"><tr><td>&nbsp;</td><td class="tdtop"><b>Nick</b></td><td class="tdtop"><b>Number of lines</b></td><td class="tdtop"><b>When?</b></td><td class="tdtop"><b>Last seen</b></td><td class="tdtop"><b>Random quote</b></td>
+
+</tr>
+<tr><td class="hirankc" align="left">1</td>
+<td style="background-color: #3096c9"><span><a href="http://www.osgeo.org/" target="_blank" title="Open in new window: http://www.osgeo.org/">FrankW</a></span></td><td style="background-color: #3096c9">7977</td><td style="background-color: #3096c9"><img src="./green-h.png" border="0" width="20" height="15" alt="4041" title="4041" /><img src="./yellow-h.png" border="0" width="14" height="15" alt="2949" title="2949" /><img src="./red-h.png" border="0" width="4" height="15" alt="881" title="881" /></td><td style="background-color: #3096c9">24 days ago</td><td style="background-color: #3096c9">"OK, I'm reassured if it is likely just the rasdaman case."</td>
+</tr>
+<tr><td class="rankc" align="left">2</td>
+<td style="background-color: #2e94c7"><span>jmckenna</span></td><td style="background-color: #2e94c7">7600</td><td style="background-color: #2e94c7"><img src="./blue-h.png" border="0" width="2" height="15" alt="437" title="437" /><img src="./green-h.png" border="0" width="25" height="15" alt="4931" title="4931" /><img src="./yellow-h.png" border="0" width="11" height="15" alt="2100" title="2100" /></td><td style="background-color: #2e94c7">2 days ago</td><td style="background-color: #2e94c7">"off to eat, thanks again for your feedback"</td>
+</tr>
+<tr><td class="rankc" align="left">3</td>
+<td style="background-color: #2c92c5"><span>hobu</span></td><td style="background-color: #2c92c5">5249</td><td style="background-color: #2c92c5"><img src="./green-h.png" border="0" width="21" height="15" alt="2760" title="2760" /><img src="./yellow-h.png" border="0" width="11" height="15" alt="1544" title="1544" /><img src="./red-h.png" border="0" width="7" height="15" alt="932" title="932" /></td><td style="background-color: #2c92c5">4 days ago</td><td style="background-color: #2c92c5">"at any rate, it looks great. lotta work to get that thing going"</td>
+</tr>
+<tr><td class="rankc" align="left">4</td>
+<td style="background-color: #2a90c3"><span>tbonfort</span></td><td style="background-color: #2a90c3">4673</td><td style="background-color: #2a90c3"><img src="./blue-h.png" border="0" width="8" height="15" alt="948" title="948" /><img src="./green-h.png" border="0" width="26" height="15" alt="3144" title="3144" /><img src="./yellow-h.png" border="0" width="4" height="15" alt="516" title="516" /></td><td style="background-color: #2a90c3">2 days ago</td><td style="background-color: #2a90c3">"JM27, what do you mean by "memory management" ?"</td>
+</tr>
+<tr><td class="rankc" align="left">5</td>
+<td style="background-color: #288ec1"><span>aboudreault</span></td><td style="background-color: #288ec1">3798</td><td style="background-color: #288ec1"><img src="./blue-h.png" border="0" width="4" height="15" alt="414" title="414" /><img src="./green-h.png" border="0" width="27" height="15" alt="2629" title="2629" /><img src="./yellow-h.png" border="0" width="7" height="15" alt="707" title="707" /></td><td style="background-color: #288ec1">2 days ago</td><td style="background-color: #288ec1">"tomkralidis, <a href="http://www.balsamiq.com/" target="_blank" title="Open in new window: http://www.balsamiq.com/">http://www.balsamiq.com/</a>"</td>
+</tr>
+<tr><td class="rankc" align="left">6</td>
+<td style="background-color: #268cbf"><span>danmo</span></td><td style="background-color: #268cbf">3766</td><td style="background-color: #268cbf"><img src="./blue-h.png" border="0" width="1" height="15" alt="148" title="148" /><img src="./green-h.png" border="0" width="23" height="15" alt="2198" title="2198" /><img src="./yellow-h.png" border="0" width="13" height="15" alt="1302" title="1302" /><img src="./red-h.png" border="0" width="1" height="15" alt="118" title="118" /></td><td style="background-color: #268cbf">907 days ago</td><td style="background-color: #268cbf">"I'd say it's only 50% chances at this point"</td>
+</tr>
+<tr><td class="rankc" align="left">7</td>
+<td style="background-color: #248abd"><span>mdsmith</span></td><td style="background-color: #248abd">3198</td><td style="background-color: #248abd"><img src="./blue-h.png" border="0" width="1" height="15" alt="151" title="151" /><img src="./green-h.png" border="0" width="27" height="15" alt="2163" title="2163" /><img src="./yellow-h.png" border="0" width="10" height="15" alt="879" title="879" /></td><td style="background-color: #248abd">9 days ago</td><td style="background-color: #248abd">"yes, if you can have all your data in ram that is a boost"</td>
+</tr>
+<tr><td class="rankc" align="left">8</td>
+<td style="background-color: #2288bb"><span>sigabrt</span></td><td style="background-color: #2288bb">2710</td><td style="background-color: #2288bb"><img src="./blue-h.png" border="0" width="8" height="15" alt="599" title="599" /><img src="./green-h.png" border="0" width="20" height="15" alt="1409" title="1409" /><img src="./yellow-h.png" border="0" width="7" height="15" alt="524" title="524" /><img src="./red-h.png" border="0" width="2" height="15" alt="178" title="178" /></td><td style="background-color: #2288bb">yesterday</td><td style="background-color: #2288bb">"Title: SLD MapServer 6.2.1 documentation (at <a href="http://www.mapserver.org" target="_blank" title="Open in new window: http://www.mapserver.org">www.mapserver.org</a>)"</td>
+</tr>
+<tr><td class="rankc" align="left">9</td>
+<td style="background-color: #2086b9"><span>crschmidt</span></td><td style="background-color: #2086b9">2496</td><td style="background-color: #2086b9"><img src="./blue-h.png" border="0" width="4" height="15" alt="251" title="251" /><img src="./green-h.png" border="0" width="17" height="15" alt="1083" title="1083" /><img src="./yellow-h.png" border="0" width="13" height="15" alt="850" title="850" /><img src="./red-h.png" border="0" width="5" height="15" alt="312" title="312" /></td><td style="background-color: #2086b9">1005 days ago</td><td style="background-color: #2086b9">"anyway, you're still not using AGG"</td>
+</tr>
+<tr><td class="rankc" align="left">10</td>
+<td style="background-color: #1e84b7"><span>dmorissette</span></td><td style="background-color: #1e84b7">2202</td><td style="background-color: #1e84b7"><img src="./blue-h.png" border="0" width="1" height="15" alt="67" title="67" /><img src="./green-h.png" border="0" width="26" height="15" alt="1446" title="1446" /><img src="./yellow-h.png" border="0" width="11" height="15" alt="650" title="650" /></td><td style="background-color: #1e84b7">yesterday</td><td style="background-color: #1e84b7">"jmckenna:  don't ask to ask, just ask ;-)"</td>
+</tr>
+<tr><td class="rankc" align="left">11</td>
+<td style="background-color: #1c82b5"><span>tomkralidis</span></td><td style="background-color: #1c82b5">1997</td><td style="background-color: #1c82b5"><img src="./blue-h.png" border="0" width="1" height="15" alt="91" title="91" /><img src="./green-h.png" border="0" width="16" height="15" alt="830" title="830" /><img src="./yellow-h.png" border="0" width="16" height="15" alt="822" title="822" /><img src="./red-h.png" border="0" width="5" height="15" alt="254" title="254" /></td><td style="background-color: #1c82b5">yesterday</td><td style="background-color: #1c82b5">"StephanMeissl: hmmm, MapServer can't find swig"</td>
+</tr>
+<tr><td class="rankc" align="left">12</td>
+<td style="background-color: #1a80b3"><span>CIA-55</span></td><td style="background-color: #1a80b3">1468</td><td style="background-color: #1a80b3"><img src="./blue-h.png" border="0" width="34" height="15" alt="1257" title="1257" /><img src="./green-h.png" border="0" width="3" height="15" alt="132" title="132" /><img src="./yellow-h.png" border="0" width="1" height="15" alt="62" title="62" /></td><td style="background-color: #1a80b3">600 days ago</td><td style="background-color: #1a80b3">"adjust wms extent to mapserver extent."</td>
+</tr>
+<tr><td class="rankc" align="left">13</td>
+<td style="background-color: #187eb1"><span>nhv</span></td><td style="background-color: #187eb1">1456</td><td style="background-color: #187eb1"><img src="./blue-h.png" border="0" width="7" height="15" alt="264" title="264" /><img src="./green-h.png" border="0" width="19" height="15" alt="695" title="695" /><img src="./yellow-h.png" border="0" width="10" height="15" alt="364" title="364" /><img src="./red-h.png" border="0" width="3" height="15" alt="133" title="133" /></td><td style="background-color: #187eb1">2 days ago</td><td style="background-color: #187eb1">"build your overviews to match expected requests also if possible"</td>
+</tr>
+<tr><td class="rankc" align="left">14</td>
+<td style="background-color: #167caf"><span>mdev</span></td><td style="background-color: #167caf">1129</td><td style="background-color: #167caf"><img src="./green-h.png" border="0" width="19" height="15" alt="539" title="539" /><img src="./yellow-h.png" border="0" width="20" height="15" alt="589" title="589" /></td><td style="background-color: #167caf">1120 days ago</td><td style="background-color: #167caf">"then it all morphed into it's own thing"</td>
+</tr>
+<tr><td class="rankc" align="left">15</td>
+<td style="background-color: #147aad"><span>ue</span></td><td style="background-color: #147aad">1070</td><td style="background-color: #147aad"><img src="./blue-h.png" border="0" width="9" height="15" alt="259" title="259" /><img src="./green-h.png" border="0" width="20" height="15" alt="561" title="561" /><img src="./yellow-h.png" border="0" width="8" height="15" alt="237" title="237" /></td><td style="background-color: #147aad">1046 days ago</td><td style="background-color: #147aad">"strk, yeah it has built in functions for what"</td>
+</tr>
+<tr><td class="rankc" align="left">16</td>
+<td style="background-color: #1278ab"><span>strk</span></td><td style="background-color: #1278ab">1067</td><td style="background-color: #1278ab"><img src="./blue-h.png" border="0" width="13" height="15" alt="366" title="366" /><img src="./green-h.png" border="0" width="24" height="15" alt="654" title="654" /><img src="./yellow-h.png" border="0" width="1" height="15" alt="39" title="39" /></td><td style="background-color: #1278ab">408 days ago</td><td style="background-color: #1278ab">"so you're going manually after each and every possible param ?"</td>
+</tr>
+<tr><td class="rankc" align="left">17</td>
+<td style="background-color: #1076a9"><span>pramsey</span></td><td style="background-color: #1076a9">928</td><td style="background-color: #1076a9"><img src="./green-h.png" border="0" width="17" height="15" alt="396" title="396" /><img src="./yellow-h.png" border="0" width="18" height="15" alt="440" title="440" /><img src="./red-h.png" border="0" width="3" height="15" alt="92" title="92" /></td><td style="background-color: #1076a9">2 days ago</td><td style="background-color: #1076a9">"<a href="http://trac.osgeo.org/mapserver/ticket/3255" target="_blank" title="Open in new window: http://trac.osgeo.org/mapserver/ticket/3255">http://trac.osgeo.org/mapserver/ticket/3255</a>"</td>
+</tr>
+<tr><td class="rankc" align="left">18</td>
+<td style="background-color: #0e74a7"><span>project10</span></td><td style="background-color: #0e74a7">798</td><td style="background-color: #0e74a7"><img src="./green-h.png" border="0" width="19" height="15" alt="388" title="388" /><img src="./yellow-h.png" border="0" width="20" height="15" alt="409" title="409" /></td><td style="background-color: #0e74a7">1112 days ago</td><td style="background-color: #0e74a7">"thanks thomas, I could have sworn I bookmarked that before."</td>
+</tr>
+<tr><td class="rankc" align="left">19</td>
+<td style="background-color: #0c72a5"><span>sdlime</span></td><td style="background-color: #0c72a5">734</td><td style="background-color: #0c72a5"><img src="./green-h.png" border="0" width="26" height="15" alt="489" title="489" /><img src="./yellow-h.png" border="0" width="10" height="15" alt="200" title="200" /><img src="./red-h.png" border="0" width="2" height="15" alt="45" title="45" /></td><td style="background-color: #0c72a5">71 days ago</td><td style="background-color: #0c72a5">"I think we ignore them in some (many) cases."</td>
+</tr>
+<tr><td class="rankc" align="left">20</td>
+<td style="background-color: #0a70a3"><span>Assefa</span></td><td style="background-color: #0a70a3">724</td><td style="background-color: #0a70a3"><img src="./blue-h.png" border="0" width="1" height="15" alt="33" title="33" /><img src="./green-h.png" border="0" width="24" height="15" alt="435" title="435" /><img src="./yellow-h.png" border="0" width="12" height="15" alt="235" title="235" /><img src="./red-h.png" border="0" width="1" height="15" alt="21" title="21" /></td><td style="background-color: #0a70a3">548 days ago</td><td style="background-color: #0a70a3">"perfect. I will give it a try this pm"</td>
+</tr>
+<tr><td class="rankc" align="left">21</td>
+<td style="background-color: #086ea1"><span>StephanMeissl</span></td><td style="background-color: #086ea1">593</td><td style="background-color: #086ea1"><img src="./blue-h.png" border="0" width="7" height="15" alt="109" title="109" /><img src="./green-h.png" border="0" width="31" height="15" alt="460" title="460" /><img src="./yellow-h.png" border="0" width="1" height="15" alt="24" title="24" /></td><td style="background-color: #086ea1">2 days ago</td><td style="background-color: #086ea1">"I'm on 12.04 and have 2.0.4+really2.0.4-4ubuntu2"</td>
+</tr>
+<tr><td class="rankc" align="left">22</td>
+<td style="background-color: #066c9f"><span>mstrac</span></td><td style="background-color: #066c9f">585</td><td style="background-color: #066c9f"><img src="./blue-h.png" border="0" width="3" height="15" alt="55" title="55" /><img src="./green-h.png" border="0" width="18" height="15" alt="274" title="274" /><img src="./yellow-h.png" border="0" width="12" height="15" alt="178" title="178" /><img src="./red-h.png" border="0" width="5" height="15" alt="78" title="78" /></td><td style="background-color: #066c9f">1927 days ago</td><td style="background-color: #066c9f">"shapelib: <a href="http://shapelib.maptools.org/" target="_blank" title="Open in new window: http://shapelib.maptools.org/">http://shapelib.maptools.org/</a>"</td>
+</tr>
+<tr><td class="rankc" align="left">23</td>
+<td style="background-color: #046a9d"><span>springmeyer</span></td><td style="background-color: #046a9d">582</td><td style="background-color: #046a9d"><img src="./green-h.png" border="0" width="9" height="15" alt="135" title="135" /><img src="./yellow-h.png" border="0" width="24" height="15" alt="358" title="358" /><img src="./red-h.png" border="0" width="6" height="15" alt="89" title="89" /></td><td style="background-color: #046a9d">620 days ago</td><td style="background-color: #046a9d">"er, I mean, its pretty easy to do with tilecache"</td>
+</tr>
+<tr><td class="rankc" align="left">24</td>
+<td style="background-color: #02689b"><span>jlivni</span></td><td style="background-color: #02689b">567</td><td style="background-color: #02689b"><img src="./green-h.png" border="0" width="15" height="15" alt="220" title="220" /><img src="./yellow-h.png" border="0" width="12" height="15" alt="178" title="178" /><img src="./red-h.png" border="0" width="11" height="15" alt="164" title="164" /></td><td style="background-color: #02689b">106 days ago</td><td style="background-color: #02689b">"not limited for your use case (as you described it, anyway)"</td>
+</tr>
+<tr><td class="rankc" align="left">25</td>
+<td style="background-color: #006699"><span>CIA-83</span></td><td style="background-color: #006699">538</td><td style="background-color: #006699"><img src="./blue-h.png" border="0" width="12" height="15" alt="174" title="174" /><img src="./green-h.png" border="0" width="23" height="15" alt="316" title="316" /><img src="./yellow-h.png" border="0" width="2" height="15" alt="34" title="34" /><img src="./red-h.png" border="0" width="1" height="15" alt="14" title="14" /></td><td style="background-color: #006699">387 days ago</td><td style="background-color: #006699">"Feedback, changes, tests, all welcome! - <a href="http://git.io/z73XBA" target="_blank" title="Open in new window: http://git.io/z73XBA">http://git.io/z73XBA</a>"</td>
+</tr>
+</table><br />
+<br /><b><i>These didn't make it to the top:</i></b><table><tr>
+<td class="rankc10"><span>akrherz (519)</span></td>
+<td class="rankc10"><span>anli_ (490)</span></td>
+<td class="rankc10"><span>TJCRI (479)</span></td>
+<td class="rankc10"><span>woodbri (457)</span></td>
+<td class="rankc10"><span>FrankW_ (452)</span></td>
+</tr><tr>
+<td class="rankc10"><span>gislars (448)</span></td>
+<td class="rankc10"><span>szekerest_ (410)</span></td>
+<td class="rankc10"><span>racicot (390)</span></td>
+<td class="rankc10"><span>bitner (376)</span></td>
+<td class="rankc10"><span>milovanderlinden (366)</span></td>
+</tr><tr>
+<td class="rankc10"><span>EvenR (339)</span></td>
+<td class="rankc10"><span>CIA-37 (337)</span></td>
+<td class="rankc10"><span>tbonfort_ (333)</span></td>
+<td class="rankc10"><span>kanhaiya_kk (321)</span></td>
+<td class="rankc10"><span>xreal (321)</span></td>
+</tr><tr>
+<td class="rankc10"><span>CIA-35 (317)</span></td>
+<td class="rankc10"><span>zanberdo (299)</span></td>
+<td class="rankc10"><span>alanb (297)</span></td>
+<td class="rankc10"><span>Mage_ (294)</span></td>
+<td class="rankc10"><span>Primer (287)</span></td>
+</tr><tr>
+<td class="rankc10"><span>Yancho (263)</span></td>
+<td class="rankc10"><span>motley (262)</span></td>
+<td class="rankc10"><span>Flewellyn (261)</span></td>
+<td class="rankc10"><span>orkam_wrk (260)</span></td>
+<td class="rankc10"><span>enjahova (256)</span></td>
+</tr><tr>
+<td class="rankc10"><span>tbnorth (250)</span></td>
+<td class="rankc10"><span>dstrevinas (242)</span></td>
+<td class="rankc10"><span>johto (221)</span></td>
+<td class="rankc10"><span>Aji-Dahaka (216)</span></td>
+<td class="rankc10"><span>phurl (212)</span></td>
+</tr></table>
+<br /><b>By the way, there were 1397 other nicks.</b><br />
+   <br />
+   <table width="710" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Big numbers</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table width="714">
+<tr><td class="hicell">Is <b>merc</b> stupid or just asking too many questions?  49.5% lines contained a question!
+<br /><span class="small"><b>shadow_phoenix</b> didn't know that much either.  40.9% of his/her lines were questions.</span>
+</td></tr>
+<tr><td class="hicell">The loudest one was <b>merc</b>, who yelled 22.3% of the time!
+<br /><span class="small">Another <i>old yeller</i> was <b>pnaciona</b>, who shouted 16.5% of the time!</span>
+</td></tr>
+<tr><td class="hicell">It seems that <b>azzy</b>'s shift-key is hanging:  12.8% of the time he/she wrote UPPERCASE.<br /><span class="small"><b>For example, like this:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;azzy&gt; WEB</span>
+<br /><span class="small"><b>asabi</b> just forgot to deactivate his/her Caps-Lock.  He/She wrote UPPERCASE 10.8% of the time.</span>
+</td></tr>
+<tr><td class="hicell"><b>hobu</b> is a very aggressive person.  He/She attacked others <b>2</b> times.<br /><span class="small"><b>For example, like this:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* hobu smacks own wrist for dereliction of duty</span>
+<br /><span class="small"><b>aboudreault</b> can't control his/her aggressions, either.  He/She picked on others <b>2</b> times.</span>
+</td></tr>
+<tr><td class="hicell">Poor <b>himself</b>, nobody likes him/her.  He/She was attacked <b>2</b> times.<br /><span class="small"><b>For example, like this:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* tbonfort slaps himself for not remembering to move var decs to the top</span>
+<br /><span class="small"><b>self</b> seems to be unliked too.  He/She got beaten <b>2</b> times.</span>
+</td></tr>
+<tr><td class="hicell"><b>Yancho</b> brings happiness to the world.  16.7% lines contained smiling faces.  :)
+<br /><span class="small"><b>tigerfoot</b> isn't a sad person either, smiling 15.5% of the time.</span>
+</td></tr>
+<tr><td class="hicell"><b>CIA-116</b> seems to be sad at the moment:  51.1% lines contained sad faces.  :(
+<br /><span class="small"><b>CIA-46</b> is also a sad person, crying 46.7% of the time.</span>
+</td></tr>
+<tr><td class="hicell"><b>echo4mic_freenod</b> wrote the longest lines, averaging 138.7 letters per line.<br />
+<span class="small">#mapserver average was 64.5 letters per line.</span></td></tr>
+<tr><td class="hicell"><b>jfalvarez</b> wrote the shortest lines, averaging 33.8 characters per line.<br />
+<span class="small"><b>phurl</b> was tight-lipped, too, averaging 34.1 characters.</span></td></tr>
+<tr><td class="hicell"><b>FrankW</b> spoke a total of 92990 words!
+<br /><span class="small">FrankW's faithful follower, <b>jmckenna</b>, didn't speak so much: 81025 words.</span>
+</td></tr>
+<tr><td class="hicell"><b>jcole_</b> wrote an average of 74.00 words per line.
+<br /><span class="small">Channel average was 11.13 words per line.</span>
+</td></tr>
+</table>
+   <br />
+   <table width="710" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Most used words</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table border="0" width="714"><tr>
+<td>&nbsp;</td><td class="tdtop"><b>Word</b></td>
+<td class="tdtop"><b>Number of Uses</b></td>
+<td class="tdtop"><b>Last Used by</b></td></tr>
+<tr><td class="hirankc">1</td>
+<td class="hicell">there</td>
+<td class="hicell">3782</td>
+<td class="hicell">merc</td>
+</tr>
+<tr><td class="rankc">2</td>
+<td class="hicell">Would</td>
+<td class="hicell">3347</td>
+<td class="hicell">EvenR</td>
+</tr>
+<tr><td class="rankc">3</td>
+<td class="hicell">title</td>
+<td class="hicell">2936</td>
+<td class="hicell">sigabrt</td>
+</tr>
+<tr><td class="rankc">4</td>
+<td class="hicell">think</td>
+<td class="hicell">2932</td>
+<td class="hicell">aboudreault</td>
+</tr>
+<tr><td class="rankc">5</td>
+<td class="hicell">should</td>
+<td class="hicell">2797</td>
+<td class="hicell">merc</td>
+</tr>
+<tr><td class="rankc">6</td>
+<td class="hicell">layer</td>
+<td class="hicell">2697</td>
+<td class="hicell">aboudreault</td>
+</tr>
+<tr><td class="rankc">7</td>
+<td class="hicell">using</td>
+<td class="hicell">2642</td>
+<td class="hicell">tbonfort</td>
+</tr>
+<tr><td class="rankc">8</td>
+<td class="hicell">about</td>
+<td class="hicell">2267</td>
+<td class="hicell">aboudreault</td>
+</tr>
+<tr><td class="rankc">9</td>
+<td class="hicell">thanks</td>
+<td class="hicell">2224</td>
+<td class="hicell">jmckenna</td>
+</tr>
+<tr><td class="rankc">10</td>
+<td class="hicell">error</td>
+<td class="hicell">2160</td>
+<td class="hicell">aboudreault</td>
+</tr>
+</table>
+   <br />
+   <table width="710" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Most referenced nicks</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table border="0" width="714"><tr>
+<td>&nbsp;</td><td class="tdtop"><b>Nick</b></td>
+<td class="tdtop"><b>Number of Uses</b></td>
+<td class="tdtop"><b>Last Used by</b></td></tr>
+<tr><td class="hirankc">1</td>
+<td class="hicell">mapserver</td>
+<td class="hicell">7443</td>
+<td class="hicell">Hvidberg</td>
+</tr>
+<tr><td class="rankc">2</td>
+<td class="hicell">tbonfort</td>
+<td class="hicell">2150</td>
+<td class="hicell">aboudreault</td>
+</tr>
+<tr><td class="rankc">3</td>
+<td class="hicell">jmckenna</td>
+<td class="hicell">1398</td>
+<td class="hicell">aboudreault</td>
+</tr>
+<tr><td class="rankc">4</td>
+<td class="hicell">hobu</td>
+<td class="hicell">1229</td>
+<td class="hicell">jmckenna</td>
+</tr>
+<tr><td class="rankc">5</td>
+<td class="hicell">FrankW</td>
+<td class="hicell">1224</td>
+<td class="hicell">s34n</td>
+</tr>
+</table>
+   <br />
+   <table width="710" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Most referenced URLs</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table border="0" width="714"><tr>
+<td>&nbsp;</td><td class="tdtop"><b>URL</b></td>
+<td class="tdtop"><b>Number of Uses</b></td>
+<td class="tdtop"><b>Last Used by</b></td></tr>
+<tr><td class="hirankc">1</td>
+<td class="hicell"><a href="http://www.mapserver.org">http://www.mapserver.org</a></td>
+<td class="hicell">135</td>
+<td class="hicell">sigabrt</td>
+</tr>
+<tr><td class="rankc">2</td>
+<td class="hicell"><a href="HTTP://PEOPLESPRIMARY.COM">HTTP://PEOPLESPRIMARY.COM</a></td>
+<td class="hicell">131</td>
+<td class="hicell">Pluto</td>
+</tr>
+<tr><td class="rankc">3</td>
+<td class="hicell"><a href="http://rafb.net/paste">http://rafb.net/paste</a></td>
+<td class="hicell">48</td>
+<td class="hicell">FrankW</td>
+</tr>
+<tr><td class="rankc">4</td>
+<td class="hicell"><a href="http://trac.osgeo.org/mapserver/">http://trac.osgeo.org/mapserver/</a></td>
+<td class="hicell">22</td>
+<td class="hicell">dmorissette</td>
+</tr>
+<tr><td class="rankc">5</td>
+<td class="hicell"><a href="http://www.gdal.org/">http://www.gdal.org/</a></td>
+<td class="hicell">22</td>
+<td class="hicell">sigabrt</td>
+</tr>
+</table>
+   <br />
+   <table width="710" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Other interesting numbers</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table width="714">
+<tr><td class="hicell">Nice opers here, no one got kicked!</td></tr>
+<tr><td class="hicell">Strange, no op was given on #mapserver!</td></tr>
+<tr><td class="hicell">Wow, no op was taken on #mapserver!</td></tr>
+<tr><td class="hicell"><b>hobu</b> always lets us know what he/she's doing: 305 actions!<br /><span class="small"><b>For example, like this:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* hobu votes +1</span>
+<br /><span class="small">Also, <b>FrankW</b> tells us what's up with 232 actions.</span>
+</td></tr>
+<tr><td class="hicell"><b>jmckenna</b> talks to him/herself a lot.  He/She wrote over 5 lines in a row 50 times!
+<br /><span class="small">Another lonely one was <b>FrankW</b>, who managed to hit 42 times.</span>
+</td></tr>
+<tr><td class="hicell"><b>tomkralidis</b> couldn't decide whether to stay or go.  4493 joins during this reporting period!</td></tr>
+<tr><td class="hicell"><b>CWFEU</b> has quite a potty mouth.  0.2% words were foul language.
+<br /><span class="small"><b>merc</b> also makes sailors blush, 0.1% of the time.</span>
+</td></tr>
+</table>
+   <br />
+   <table width="710" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Latest Topics</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table width="714">
+<tr><td class="hicell"><i>MapServer 6.2.1 is released! Old Stable Release: 6.0.3. <a href="http://mapserver.org/" target="_blank" title="Open in new window: http://mapserver.org/">http://mapserver.org/</a> | bugs <a href="https://github.com/mapserver/mapserver/issues" target="_blank" title="Open in new window: https://github.com/mapserver/mapserver/issues">https://github.com/mapserver/mapserver/issues</a> | Logs at: <a href="http://irclogs.geoapt.com/mapserver/" target="_blank" title="Open in new window: http://irclogs.geoapt.com/mapserver/">http://irclogs.geoapt.com/mapserver/</a> | Paste command snippets via <a href="https://gist.github.com/" target="_blank" title="Open in new window: https://gist.github.com/">https://gist.github.com/</a> | Don't ask to ask, just ask</i></td>
+<td class="hicell"><b>9 days ago at 05:27 by aboudreault</b></td></tr>
+<tr><td class="hicell"><i>MapServer 6.2.0 is released! Old Stable Release: 6.0.3. <a href="http://mapserver.org/" target="_blank" title="Open in new window: http://mapserver.org/">http://mapserver.org/</a> | bugs <a href="https://github.com/mapserver/mapserver/issues" target="_blank" title="Open in new window: https://github.com/mapserver/mapserver/issues">https://github.com/mapserver/mapserver/issues</a> | Logs at: <a href="http://logs.qgis.org/mapserver/" target="_blank" title="Open in new window: http://logs.qgis.org/mapserver/">http://logs.qgis.org/mapserver/</a> | Paste command snippets via <a href="https://gist.github.com/" target="_blank" title="Open in new window: https://gist.github.com/">https://gist.github.com/</a> | Don't ask to ask, just ask</i></td>
+<td class="hicell"><b>202 days ago at 05:55 by aboudreault</b></td></tr>
+<tr><td class="hicell"><i>MapServer 6.2.0 is realsed! Old Stable Release: 6.0.3. <a href="http://mapserver.org/" target="_blank" title="Open in new window: http://mapserver.org/">http://mapserver.org/</a> | bugs <a href="https://github.com/mapserver/mapserver/issues" target="_blank" title="Open in new window: https://github.com/mapserver/mapserver/issues">https://github.com/mapserver/mapserver/issues</a> | Logs at: <a href="http://logs.qgis.org/mapserver/" target="_blank" title="Open in new window: http://logs.qgis.org/mapserver/">http://logs.qgis.org/mapserver/</a> | Paste command snippets via <a href="https://gist.github.com/" target="_blank" title="Open in new window: https://gist.github.com/">https://gist.github.com/</a> | Don't ask to ask, just ask</i></td>
+<td class="hicell"><b>203 days ago at 08:19 by aboudreault</b></td></tr>
+<tr><td align="center" colspan="2" class="asmall">The topic was set 24 times.</td></tr>
+</table>
+Total number of lines: 190619.<br /><br />
+<span class="small">
+Stats generated by <a href="http://pisg.sourceforge.net/" title="Go to the pisg homepage" class="background">pisg</a> v0.73<br />
+pisg by <a href="http://mbrix.dk/" title="Go to the authors homepage" class="background">Morten Brix Pedersen</a> and others<br />
+Stats generated in 00 hours 01 minutes and 59 seconds
+</span>
+
+<!-- NFiles = "0"; Format = "dircproxy"; Lang = "EN"; LangFile = "/usr/share/pisg/lang.txt"; Charset = "iso-8859-1"; LogCharset = ""; LogCharsetFallback = ""; LogPrefix = ""; LogSuffix = ""; NickTracking = "0"; TimeOffset = "+0" -->
+</div>
+</body>
+</html>
+
